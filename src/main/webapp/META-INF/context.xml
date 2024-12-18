@@ -1,0 +1,12 @@
+
+<Context reloadable="true">
+	<Resource
+		name="jdbc/holiday"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://localhost:5432/holiday"
+		username="postgres"
+		password="admin"
+	/>
+</Context>

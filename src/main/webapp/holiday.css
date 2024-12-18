@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+h1 {
+  color: rgb(0, 128, 0);
+}
+
+button { 
+	font-size : 15pt;
+}

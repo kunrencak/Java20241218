@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+h1 {
+  color: rgb(0, 128, 0);
+}
+
+button { 
+	font-size : 15pt;
+}
+
+/* センタリングのスタイルを記述 */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+	font-size : 15pt;
+}
+
+/* フォームのフレックスレイアウトを修正 */
+form {
+    width: 300px; /* フォームの幅を適切に設定 */
+    background-color: #f9f9f9; /* 背景色を調整する場合 */
+    padding: 20px; /* 余白を調整 */
+    border-radius: 5px; /* 角丸を付ける */
+    margin: 0 auto; /* 水平中央配置 */
+    display: flex; /* フレックスボックスレイアウトを利用 */
+    flex-direction: column; /* デフォルトで縦に配置されているので、横並びにするため横方向にフレックス配置 */
+    align-items: center; /* 水平中央配置 */
+    justify-content: space-between; /* 入力フォームとボタンの間に適切な余白を配置 */
+}
+
+form label {
+    display: block;
+    width: 100%; /* フル幅にして中央に配置しつつ、ラベルと入力の間に余白を持たせる */
+    margin-bottom: 10px;
+	text-align: left; /* ラベルを左寄せにする場合 */
+}
+
+form .form-group {
+    display: flex; /* ラベルと入力フィールドを横並びにする */
+    align-items: center; /* 縦の中央揃え */
+    justify-content: space-between; /* ラベルと入力を適切に配置 */
+    width: 100%; /* 親の幅いっぱいを使う */
+    margin-bottom: 10px;
+}
+
+form input[type="date"] {
+    flex-grow: 1; /* 入力フィールドを横方向に伸縮可能にする */
+    margin-right: 10px; /* ボタンとの間に余白を追加 */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    flex-shrink: 0; /* ボタンはサイズ変更されない */
+    padding: 10px 15px;
+}
+
+table {
+    width: 50%; /* 表の横幅をコンテンツの80%に制限する */
+    margin: 0 auto; /* 水平中央配置 */
+    border-collapse: collapse; /* 枠線の衝突を防ぐ */
+}
+
+table th, table td {
+    width: 33%; /* 各列の幅を均等に分ける（任意の幅に調整可） */
+    padding: 10px; /* 余白の調整 */
+}
+
